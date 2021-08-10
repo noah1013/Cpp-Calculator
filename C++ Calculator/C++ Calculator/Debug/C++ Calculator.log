@@ -1,0 +1,28 @@
+﻿  C++ Calculator.cpp
+C:\Users\ntobi\source\repos\C++ Calculator\C++ Calculator\C++ Calculator.cpp(44,31): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\ntobi\source\repos\C++ Calculator\C++ Calculator\C++ Calculator.cpp(47,31): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\ntobi\source\repos\C++ Calculator\C++ Calculator\C++ Calculator.cpp(50,31): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\ntobi\source\repos\C++ Calculator\C++ Calculator\C++ Calculator.cpp(53,31): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\ntobi\source\repos\C++ Calculator\C++ Calculator\C++ Calculator.cpp(70,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ntobi\source\repos\C++ Calculator\C++ Calculator\C++ Calculator.cpp(89,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ntobi\source\repos\C++ Calculator\C++ Calculator\C++ Calculator.cpp(105,31): warning C4244: 'argument': conversion from '_Ty' to 'int', possible loss of data
+          with
+          [
+              _Ty=double
+          ]
+C:\Users\ntobi\source\repos\C++ Calculator\C++ Calculator\C++ Calculator.cpp(106,31): warning C4244: 'argument': conversion from '_Ty' to 'int', possible loss of data
+          with
+          [
+              _Ty=double
+          ]
+C:\Users\ntobi\source\repos\C++ Calculator\C++ Calculator\C++ Calculator.cpp(122,31): warning C4244: 'argument': conversion from '_Ty' to 'int', possible loss of data
+          with
+          [
+              _Ty=double
+          ]
+C:\Users\ntobi\source\repos\C++ Calculator\C++ Calculator\C++ Calculator.cpp(123,31): warning C4244: 'argument': conversion from '_Ty' to 'int', possible loss of data
+          with
+          [
+              _Ty=double
+          ]
+  C++ Calculator.vcxproj -> C:\Users\ntobi\source\repos\C++ Calculator\Debug\C++ Calculator.exe
