@@ -58,8 +58,7 @@ public:
 
     //Takes expression and changes reference string from main as the result of the expression. 
     void EvalExpression(string &str) {
-        
-        cout << str << endl;
+ 
         vector <double> nums;
         vector <char> opers;
 
@@ -81,25 +80,15 @@ public:
 
         bool hasMult_Div;
 
-       /* for (int i = 0; i < nums.size(); i++) {
-            cout << nums[0] << " ";
-        }
-        cout << endl;*/
-
-        for (int i = 0; i < opers.size(); i++) {
-            cout << opers[0] << " ";
-        }
-        cout << endl;
+     
 
         while (nums.size() > 1 && !opers.empty()) {
-            if (opers[0] == '*' || opers[0] == '/') {
+            hasMult_Div = false;
+            for (int i = 0; i < opers.size(); i++) {
+                if (opers[i] == '*' || opers[i] == '/') {
                     hasMult_Div = true;
+                }
             }
-            else {
-                    hasMult_Div = false;
-            }
-            //cout << hasMult_Div << endl;
-
             
             if((opers[0] == '*' || opers[0] == '/') && hasMult_Div) {
                 setNum1(nums[0]);
@@ -114,7 +103,7 @@ public:
             else if ((opers[0] == '+' || opers[0] == '-') && hasMult_Div) {
                 opers.push_back(opers[0]);
                 opers.erase(opers.begin());
-                nums.push_back(opers[0]);
+                nums.push_back(nums[0]);
                 nums.erase(nums.begin());
             }
 
@@ -124,20 +113,9 @@ public:
                 setOper(opers[0]);
                 nums.push_back(Calculation());
                 nums.erase(nums.begin(), nums.begin() + 2);
+                opers.erase(opers.begin());
             }
-
-            /*for (int i = 0; i < nums.size(); i++) {
-                cout << nums[0] << " ";
-            }
-            cout << endl;
-
-            for (int i = 0; i < opers.size(); i++) {
-                cout << opers[0] << " ";
-            }
-            cout << endl;*/
-        }    
-
-        //cout << to_string(nums[0]);
+        }   
         str = to_string(nums[0]);
         return;
     }
@@ -170,6 +148,7 @@ int main()
                 
             }
         }
+        cout << endl;
     } while (true);
 
     system("pause");
